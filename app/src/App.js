@@ -1,40 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-import HogeHoge from './Hoge.js'
-
-function Hoge() {
-  return (
-    <div>
-      <h1>Hoge</h1>
-    </div>
-  )
-}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {(function () {
-          const h1s = [];
-          for (let i = 0; i < 5; i++) {
-            h1s.push(<HogeHoge />);
-          }
-          return <div>{h1s}</div>;
-        }())}
-        <Hoge />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hello world
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ height: "700px" }}>
+      <div style={{height: "10%",backgroundColor: "#0d1722"}}>
+        Menu
+      </div>
+      <div style={{height: "50%",backgroundColor: "#1c3045"}}>
+        ue
+      </div>
+      <div style={{ height: "50%" }}>
+        <div className="leftsita" style={{ height: "100%", width: "15%", display: "inline-block" }}>
+        </div>
+        
+        <div className="sita" style={{ height: "100%", width: "70%", display: "inline-block" }}>
+          <div style={{}}>
+
+          </div>
+        </div>
+
+        <div style={{ height: "100%", width: "15%", backgroundColor: "#254465", display: "inline-block" }}></div>
+      </div>
     </div>
   );
 }
